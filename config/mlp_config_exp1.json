@@ -1,0 +1,80 @@
+{
+    "learners": {},
+    "agnosticlearners": {
+        "repository": {
+            "MLP-sensitive": {
+                "levels": {
+                    "warning": 0.02,
+                    "drift": 0.01
+                },
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            },
+            "MLP-robust": {
+                "levels": {
+                    "warning": 2e-05,
+                    "drift": 1e-05
+                },
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "naive": {
+            "MLP": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "reconstruction": {
+            "MLP-sensitive": {
+                "levels": {
+                    "warning": 0.02,
+                    "drift": 0.01
+                },
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            },
+            "MLP-robust": {
+                "levels": {
+                    "warning": 2e-05,
+                    "drift": 1e-05
+                },
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "window": {
+            "MLP-small": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ],
+                "windowsize": 300
+            },
+            "MLP-large": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ],
+                "windowsize": 600
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "learners": {
+        "MASMLP": {
+            "learningrate": 0.001,
+            "hiddenlayers": [
+                40,
+                40
+            ],
+            "lamb": 10,
+            "buffersize": 300
+        },
+        "replayMLP": {
+            "learningrate": 0.001,
+            "hiddenlayers": [
+                40,
+                40
+            ],
+            "buffersize": 300
+        }
+    },
+    "agnosticlearners": {
+        "repository": {
+            "MLP": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "naive": {
+            "MLP": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "reconstruction": {
+            "MLP": {
+                "learningrate": 0.001,
+                "hiddenlayers": [
+                    40,
+                    40
+                ]
+            }
+        },
+        "window": {}
+    }
+}

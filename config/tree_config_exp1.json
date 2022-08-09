@@ -1,0 +1,66 @@
+{
+    "learners": {},
+    "agnosticlearners": {
+        "repository": {
+            "VFDT-sensitive": {
+                "levels": {
+                    "warning": 0.02,
+                    "drift": 0.01
+                },
+                "graceperiod": 20,
+                "learningratio": 0.2,
+                "split_confidence": 1e-05
+            },
+            "VFDT-robust": {
+                "levels": {
+                    "warning": 2e-05,
+                    "drift": 1e-05
+                },
+                "graceperiod": 20,
+                "learningratio": 0.2,
+                "split_confidence": 1e-05
+            }
+        },
+        "naive": {
+            "VFDT": {
+                "graceperiod": 20,
+                "learningratio": 0.2,
+                "split_confidence": 1e-05
+            }
+        },
+        "reconstruction": {
+            "VFDT-sensitive": {
+                "levels": {
+                    "warning": 0.02,
+                    "drift": 0.01
+                },
+                "graceperiod": 20,
+                "learningratio": 0.2,
+                "split_confidence": 1e-05
+            },
+            "VFDT-robust": {
+                "levels": {
+                    "warning": 2e-05,
+                    "drift": 1e-05
+                },
+                "graceperiod": 20,
+                "learningratio": 0.2,
+                "split_confidence": 1e-05
+            }
+        },
+        "window": {
+            "DTREE-small": {
+                "windowsize": 300,
+                "maxdepth": 12,
+                "minsplit": 6,
+                "minleaf": 3
+            },
+            "DTREE-large": {
+                "windowsize": 600,
+                "maxdepth": 12,
+                "minsplit": 6,
+                "minleaf": 3
+            }
+        }
+    }
+}

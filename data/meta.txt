@@ -1,0 +1,8 @@
+The data was used in the experiments as follows:
+
+Experiment 1.1 -> base (trace 1-3)
+Experiment 1.2 -> trans (trace 1-3)
+
+Experiment 2.1 -> base (trace 1-3)
+Experiment 2.2 -> base-low (trace 1-3)
+Experiment 2.3 -> seq (trace 1-3)
